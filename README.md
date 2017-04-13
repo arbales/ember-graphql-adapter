@@ -43,6 +43,7 @@ And you're done!
 * Belongs to relationships are fully supported
 * Has many relationships are fully supported
 * Async relationships and request coalescing is supported with `coalesceFindRequests: true`
+* Support for different key-naming conventions (underscored, etc) by overriding `normalizeCase` on both the Serializer and Adapter.
 
 ## Rails Example
 
@@ -138,6 +139,7 @@ get 'graph', to: 'graph#index'
 ```
 
 And that's it!
+
 
 ## Developing
 
